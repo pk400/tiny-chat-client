@@ -34,6 +34,9 @@
   <property name="windowTitle">
    <string>Tiny Chat Client</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background: #fff;</string>
+  </property>
   <property name="tabShape">
    <enum>QTabWidget::Rounded</enum>
   </property>
@@ -75,22 +78,13 @@ p, li { white-space: pre-wrap; }
      <rect>
       <x>10</x>
       <y>420</y>
-      <width>401</width>
-      <height>27</height>
+      <width>341</width>
+      <height>31</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QPushButton" name="chatbutton">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>420</y>
-      <width>71</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Say</string>
+    <property name="styleSheet">
+     <string notr="true">border-radius: none;
+border: 1px solid #aaa;</string>
     </property>
    </widget>
    <widget class="QLabel" name="usersconnectedlabel">
@@ -125,36 +119,13 @@ p, li { white-space: pre-wrap; }
       <x>360</x>
       <y>20</y>
       <width>131</width>
-      <height>391</height>
+      <height>431</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">border: 1px solid #aaa;</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>500</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuSimple_Communications_Link">
-    <property name="title">
-     <string>File</string>
-    </property>
-    <addaction name="actionQuit"/>
-   </widget>
-   <widget class="QMenu" name="menuHelp">
-    <property name="title">
-     <string>Help</string>
-    </property>
-   </widget>
-   <addaction name="menuSimple_Communications_Link"/>
-   <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionQuit">
@@ -165,22 +136,5 @@ p, li { white-space: pre-wrap; }
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections>
-  <connection>
-   <sender>chatline</sender>
-   <signal>returnPressed()</signal>
-   <receiver>chatbutton</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>210</x>
-     <y>460</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>455</x>
-     <y>460</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

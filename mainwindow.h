@@ -17,7 +17,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_chatbutton_clicked();
+    void on_chatline_returnPressed();
 
 private:
     Ui::MainWindow *ui;

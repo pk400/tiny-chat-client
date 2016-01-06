@@ -18,7 +18,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_chatbutton_clicked() {
+void MainWindow::on_chatline_returnPressed() {
     QString msg = ui->chatline->text().trimmed();
     QString chat;
     chat.append("<b>");
